@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects - Portfolio</title>
+  <style>
+    /* General */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: white;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #d62839;
+    }
+
+    /* Projects Section */
+    .projects {
+      margin: 60px auto;
+      max-width: 1100px;
+      padding: 0 20px;
+    }
+    .projects h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .projects ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .projects li {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .projects li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    }
+    .projects img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .projects a {
+      color: #f1faee;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+      transition: color 0.3s;
+    }
+    .projects a:hover {
+      color: #a8dadc;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background: rgba(0,0,0,0.2);
+      font-size: 0.95rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #20b955;
+    }
+    .whatsapp-float i {
+      margin-top: 2px;
+    }
+  </style>
+  <!-- Font Awesome for WhatsApp icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 Welcome to My Portfolio</h1>
+    <p>I’m a passionate developer who builds creative and impactful web solutions. Explore my work below!</p>
+    <a class="button" href="https://wa.me/2348135836125" target="_blank">💬 Hire Me on WhatsApp</a>
+  </header>
+
+  <section class="projects">
+    <h2>🌐 Projects I Have Built</h2>
+    <ul>
+      <li>
+        <img src="img/bank.png" alt="Bank Project">
+        <a href="http://bank.expertkryptwares.org/" target="_blank">Bank Expert Kryptwares</a>
+      </li>
+      <li>
+        <img src="img/broker.png" alt="Broker Project">
+        <a href="http://expertkryptwares.org/" target="_blank">Expert Kryptwares</a>
+      </li>
+      <li>
+        <img src="img/bank2.png" alt="Digifox Project">
+        <a href="http://digifoxempire.org/" target="_blank">Digifox Empire</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Built with ❤️ by Me</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348135836125" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
