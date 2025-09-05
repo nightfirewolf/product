@@ -144,12 +144,20 @@
       <p>This website is a modern banking platform designed to provide users with secure financial services and easy online access to their accounts.</p>
       <a class="project-btn" href="http://bank.expertkryptwares.org/" target="_blank">🔗 View Website</a>
     </li>
+
     <li>
       <img src="img/broker.png" alt="Broker Project">
       <h3>Expert Kryptwares</h3>
       <p>This website is a brokerage solution that connects clients with trading and investment opportunities, offering a professional online presence for financial services.</p>
       <a class="project-btn" href="http://expertkryptwares.org/" target="_blank">🔗 View Website</a>
     </li>
+
+    <!-- Fake loading project (middle position) -->
+    <li class="loading-card">
+      <div class="spinner"></div>
+      <p>Loading more projects...</p>
+    </li>
+
     <li>
       <img src="img/bank2.png" alt="Digifox Project">
       <h3>Digifox Empire</h3>
@@ -160,19 +168,33 @@
 </section>
 
 <style>
-  .project-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: #e63946;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s;
+  /* Spinner */
+  .loading-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
   }
-  .project-btn:hover {
-    background: #d62839;
+  .spinner {
+    border: 6px solid rgba(255,255,255,0.2);
+    border-top: 6px solid #e63946;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .loading-card p {
+    font-size: 1rem;
+    color: #f1faee;
+    opacity: 0.8;
   }
 </style>
 
